@@ -16,7 +16,8 @@ PlayrSub.setAttribute('src', subPath);
 playr.addEventListener('loadedmetadata', function (event) {
     let width = playr.videoWidth;
     let height = playr.videoHeight;
-    console.log(width + ' width and height' + height)
+    console.log(width + ' width and height' + height);
+    win.setSize(width , height );
 })
 
 function createWindow() {
