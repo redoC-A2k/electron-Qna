@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit-no">
+        <title>
+            video player
+        </title>
+        <link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <script>let $ = require('./jquery-3.2.1.slim.min.js');</script>
+        <script>require('./popper.min.js');</script>
+        <script>require('./bootstrap-4.0.0-dist/js/bootstrap.min.js');</script> 
+            <div class="container">
+                <button type="button" id ="videoFile" class="btn btn-outline-primary" style= "top:10vh ; border-radius: 30px; width: 20em; padding :10px; margin-bottom: 2vh; overflow : hidden">Select Video</button>
+            </div>
+            <div class="container">
+                <button type="button" id = "subFile" class="btn btn-outline-primary" style= "bottom:10vh ; border-radius: 30px ; width: 20em; padding :10px; margin-top: 2vh; overflow: hidden;">Select subtitle</button>
+            </div>    
+            <div  style="text-align:center; position: relative ; top:55vh;">
+                <!--<h3>after giving location of file and subtitle file click next</h3>-->
+                <button type="button" id = "next" class="btn btn-outline-dark" style=" border-radius: 30px;width: 5em; padding :10px; text-align: center;">Next</button>
+            </div> 
+        <script>require('./index.js');</script>
+    </body>
+</html>

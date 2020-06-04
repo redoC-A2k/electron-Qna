@@ -1,0 +1,28 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#que {
+    z-index: 10;
+    width: 25vh;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+#playr-video {
+    background-color: rgb(255, 228, 196, 0);
+    margin: 0px;
+    height: 590px;
+    width: 790px;
+    padding: 0px;
+}

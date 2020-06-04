@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Question
+    </title>
+    <link rel="stylesheet" href="bootstrap3/bootstrap.css">
+    </link>
+
+</head>
+
+<body>
+    <script>let $ = require('./bootstrap3/jquery.js');</script>
+    <script>
+        try {
+            require('./bootstrap3/bootstrap.js');
+        } catch (error) {
+            console.log('error :\n ' + error);
+        } </script>
+    <div class="panel panel-primary">
+        <div class="panel-heading">Type your Question here </div>
+        <div class="panel-body">
+            <div class="form-group">
+                <textarea class="form-control" rows="3" id='question'></textarea>
+            </div>
+        </div>
+    </div>
+    <div class='primary'>
+        <button class='btn btn-primary' id='submit'>Submit</button>
+    </div>
+    <script>require('./que.js')</script>
+</body>
+
+</html>

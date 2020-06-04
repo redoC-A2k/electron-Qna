@@ -1,0 +1,15 @@
+div.container-fluid{
+    margin : auto ;
+    background-color: rgb(135, 178, 189);
+    height: 93vh ;
+    width: 100%;
+}
+div.container{
+    margin : auto;
+    height: auto;
+    background-color: rgb(69, 109, 39, 0);
+    position : relative;
+    top : 40vh ;
+    text-align: center;
+    vertical-align: middle;  
+}
