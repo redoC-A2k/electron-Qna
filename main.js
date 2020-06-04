@@ -1,4 +1,5 @@
 const electron = require('electron');
+const Menu = electron.Menu ;
 const app = electron.app;
 const browserWindow = electron.BrowserWindow;
 const path = require('path');
@@ -26,8 +27,12 @@ function createWindow(){
         console.log("win closed");
     });
 }
-
+const template =[
+    
+];
 app.on('ready',()=>{
     createWindow();
+    const menu = Menu.buildFromTemplate(template);
+    Menu.setApplicationMenu(menu);
 })
 
