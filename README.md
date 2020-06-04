@@ -1,5 +1,5 @@
 # electron
-##steps 
+## steps</br> 
 1)npm install </br>
 2)npm start </br>
 if it doesnot work then do step 3</br>
