@@ -27,12 +27,12 @@ function createWindow(){
         console.log("win closed");
     });
 }
-const template =[
+/*const template =[
     
-];
+];*/
 app.on('ready',()=>{
     createWindow();
-    const menu = Menu.buildFromTemplate(template);
-    Menu.setApplicationMenu(menu);
+    //const menu = Menu.buildFromTemplate(template);
+    //Menu.setApplicationMenu(menu);
 })
 

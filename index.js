@@ -11,18 +11,20 @@ let gopromise ;
 try {
     //Go
     gopromise = new Promise(function(resolve,reject){
-        go.addEventListener('click', function () {
+        go.addEventListener('click', function (event) {
             ytlink = videoInputField.value ;
             win.loadURL(url.format({
                 pathname: path.join(__dirname, './video/index.html'),
                 protocol: 'file',
                 slashes: true
             }));
+            resolve();
         });
-    })
+    });
 } catch (error) {
     console.log('error occured ' + error);
 }
 gopromise.then(function () {
     localStorage.setItem('ytlink', ytlink)
-})
+    console.log('ytlink is ' + ytlink);
+});

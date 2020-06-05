@@ -1,4 +1,5 @@
 const ytlink = localStorage.ytlink;
+console.log(ytlink);
 const iframe = document.getElementById('iframe');
 const { remote } = require('electron');
 const url = require('url');
