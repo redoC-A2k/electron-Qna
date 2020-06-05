@@ -5,7 +5,6 @@ const { remote } = require('electron');
 const url = require('url');
 const path = require('path');
 const browserWindow = remote.BrowserWindow;
-const app = remote.app;
 const win = remote.getCurrentWindow();
 let window ;
 const quebtn = document.getElementById('que');
