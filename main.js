@@ -10,7 +10,7 @@ function createWindow(){
     win = new browserWindow({
         height:710,
         width:1286,
-        resizable:true,
+        resizable:false,
         webPreferences:{
             enableRemoteModule: true,
             nodeIntegration:true
@@ -27,12 +27,12 @@ function createWindow(){
         console.log("win closed");
     });
 }
-/*const template =[
+const template =[
     
-];*/
+];
 app.on('ready',()=>{
     createWindow();
-    //const menu = Menu.buildFromTemplate(template);
-    //Menu.setApplicationMenu(menu);
+    const menu = Menu.buildFromTemplate(template);
+    Menu.setApplicationMenu(menu);
 })
 
