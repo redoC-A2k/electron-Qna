@@ -2,15 +2,20 @@ import youtube_dl
 import requests
 
 
-def get_transcript_yt(url):
-    """A simple function to fetch transcript of YouTube videos from their URL.
+def get_transcript_yt(url: str) -> dict:
+    """A simple function to get transcript of a YouTube Video
 
-    :param url: URL of the video whose transcript is to be fetched
-    :type url: str
-    :return: A dict containing keys "subtitles" & "type"
-    which are none if not fetched.
-    :rtype: dict
+    Parameters
+    ----------
+    url : str
+        The URL of the YouTube video whose transcript is to be fetched
+
+    Returns
+    -------
+    subtitle_data : dict
+        A dict with keys "subtitles" and "type" 
     """
+
     # Setting youtube_dl options to fetch subtitles
     ydl_options = {
         "writesubtitles": True,
