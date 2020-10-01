@@ -3,8 +3,6 @@
 
 <head>
     <title>video player</title>
-    <link rel="stylesheet" href="./playr.css">
-    </link>
     <link rel="stylesheet" href="./styles.css">
     </link>
     <link rel="stylesheet" href="../bootstrap-4.0.0-dist/css/bootstrap.min.css">
@@ -12,11 +10,6 @@
 
 <body>
     <script>
-        try {
-            require('./playr.js')
-        } catch (error) {
-            console.log('error in playr.js')
-        }
         let $ = require('../jquery-3.2.1.slim.min.js')
         require('../popper.min.js')
         require('../bootstrap-4.0.0-dist/js/bootstrap.min.js')
@@ -24,20 +17,9 @@
     <div style="text-align: center; margin:auto;">
         <button type="button" id="que" class="btn btn-outline-danger">ask a question</button>
     </div>
-    <video id="plyr-video" controls style="width: 100%; height: 100%; overflow: hidden;">
-        <source id="playrPath" src="" type="video/mp4">
-        <!-- Captions are optional -->
-        <track id="playrSub" kind="captions" label="English captions" src="" srclang="en" default>
-    </video>
-
-    <script>
-        try {
-            plyr.setup("#plyr-video");
-        } catch (error) {
-            console.log('error in playr');
-        }
-        require('./index.js')
-    </script>
+    <iframe id ="iframe" width="1286" height="710" >
+    </iframe> 
+    <script>require('./index.js');</script>
 </body>
 
-</html>`
+</html>
